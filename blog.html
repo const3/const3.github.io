@@ -2,7 +2,8 @@
 layout: default
 title: Sam's Blog
 ---
-	<h1>{{ page.title }}</h1>
+<div class="container">
+	<h4>{{ page.title }}</h4>
 
    <ul class="collection with-header">
         <li class="collection-header"><h4>Publicaciones</h4></li>
@@ -10,3 +11,4 @@ title: Sam's Blog
 		<li class="collection-item"><div><span>{{ post.date | date_to_string }}</span> » {{ post.title }}<a href="{{ post.url }}" class="secondary-content"><i class="material-icons">send</i></a></div></li>  
 	{% endfor %}
       </ul>
+</div>
