@@ -3,6 +3,7 @@ layout: post
 title: "Ventajas y desventajas de SO móviles"
 date: 2016-02-01
 author: Sam Mtz
+image-src: http://placehold.it/1050x450
 ---
 
 <p class="flow-text">Antes que nada los datos presentados a continuación fueron obtenidos de diferentes sitios web. </p>
