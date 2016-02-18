@@ -80,6 +80,6 @@ window.addEventListener('load', function() {
     var results = document.getElementById('results');
     var searchBtn = document.getElementById('searchBtn');
     searchBtn.addEventListener('click', search);
-    genderField.addEventListener('onChange', search);
+    genderField.addEventListener('change', search);
     search();
 });
