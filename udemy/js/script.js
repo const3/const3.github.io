@@ -43,39 +43,42 @@ var users = [
     },
 ];
 
-
 window.addEventListener('load', function() {
-    function search(){
-            var hobbyField = document.getElementById('hobby');
+    
+    function search() {
+        
+        //get hobby
+        var hobbyField = document.getElementById('hobby');
         var hobby = hobbyField.value;
         
+        //get gender
         var genderField = document.getElementById('gender');
-        var gender = genderField.options[genderField.selectedIndex].value;
+        var selected = genderField.selectedIndex;
+        var gender = genderField.options[selected].value;
         console.log(gender);
         
         var resultsHTML = '';
         var numUsers = users.length;
         
-        for(var i=0; i<numUsers; i++){
-            if (gender== 'A' || gender == users[i].gender) {
-                if (hobby==''||hobby==users[i].hobby) {
-            resultsHTML +=  '<div class="person-row">\
-                    <img src="images/'+users[i].avatar+'" />\
-                    <div class="person-info">\
-                        <div>'+ users[i].name+'</div>\
-                        <div>'+users[i].hobby+'</div>\
-                    </div> \
-                    <button>Add as friend</button>\
-                </div>';
-            };
+        for(var i = 0; i < numUsers; i++) {
+            
+            if (gender == 'A' || gender == users[i].gender) {             
+                if (hobby == '' || hobby == users[i].hobby) {
+                    resultsHTML += '<div class="person-row">\
+                                   <img src="images/' + users[i].avatar + '" />\
+                                   <div class="person-info">\
+                                   <div>' + users[i].name + '</div>\
+                                   <div>' + users[i].hobby + '</div></div>\
+                                    <button>Add as friend</button></div>';
+                }
+            }
         }
         
-        results.innerHTML = resultsHTML;
-    }
-    }
-
-    console.log('se ha cargado la pagina');
+        results.innerHTML = resultsHTML;  
+    };
+    
     var results = document.getElementById('results');
     var searchBtn = document.getElementById('searchBtn');
     searchBtn.addEventListener('click', search);
+    search();
 });
