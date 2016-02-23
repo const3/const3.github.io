@@ -58,35 +58,33 @@ footer.page-footer {
   margin: 0;
 }
 
-.responsive-container {
-    position: relative;
-    width: 100%;
-    border: 1px solid black;
+.img-contain {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  background-color: #000;
+  margin-bottom: 20px;
 }
 
-.dummy {
-    padding-top: 100%; /* forces 1:1 aspect ratio */
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  vertical-align: middle;
 }
 
-.img-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    text-align:center; /* Align center inline elements */
-    font: 0/0 a;
+.img-shiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 0;
 }
 
-.img-container:before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-
-.img-container img {
-    vertical-align: middle;
-    display: inline-block;
+.img-shiv:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
