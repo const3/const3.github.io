@@ -20,10 +20,10 @@ title: Sam's Blog
   {% else %}
     <li class="disabled"><i class="material-icons">chevron_left</i></li>
   {% endif %}
-  
+  <!--
   {% for num in (1...paginator.total_pages) %}
   <li class="waves-effect"><a href="#!">{{num}}</a></li>
-{% endfor %}
+{% endfor %}-->
     <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
   {% if paginator.next_page %}
