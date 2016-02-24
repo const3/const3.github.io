@@ -20,8 +20,9 @@ title: Sam's Blog
   {% else %}
     <li class="disabled"><i class="material-icons">chevron_left</i></li>
   {% endif %}
-  {% for pageNum in paginator.total_pages %}
-  <li class="waves-effect"><a href="#!">{{pageNum}}</a></li>
+  
+  {% for num in (1...paginator.total_pages) %}
+  <li class="waves-effect"><a href="#!">{{num}}</a></li>
 {% endfor %}
   
   {% if paginator.next_page %}
