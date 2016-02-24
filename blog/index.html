@@ -24,7 +24,8 @@ title: Sam's Blog
   {% for num in (1...paginator.total_pages) %}
   <li class="waves-effect"><a href="#!">{{num}}</a></li>
 {% endfor %}
-  
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
   {% if paginator.next_page %}
     <li class="waves-effect"><a href="{{ paginator.next_page_path }}"><i class="material-icons">chevron_right</i></a></li>
   {% else %}
