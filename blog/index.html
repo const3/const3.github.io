@@ -16,9 +16,9 @@ title: Sam's Blog
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-  <li><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+  <li><a href="{{ paginator.previous_page_path }}"><i class="material-icons">chevron_left</i></a></li>
   {% else %}
-    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="disabled"><i class="material-icons">chevron_left</i></li>
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
