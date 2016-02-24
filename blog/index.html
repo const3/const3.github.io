@@ -16,7 +16,7 @@ title: Sam's Blog
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-  <li><a href="{{ paginator.previous_page_path }}"><i class="material-icons">chevron_left</i></a></li>
+  <li class="waves-effect"><a href="{{ paginator.previous_page_path }}"><i class="material-icons">chevron_left</i></a></li>
   {% else %}
     <li class="disabled"><i class="material-icons">chevron_left</i></li>
   {% endif %}
