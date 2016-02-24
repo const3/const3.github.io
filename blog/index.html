@@ -14,7 +14,7 @@ title: Sam's Blog
 {% endfor %}
  </ul>
 <!-- Pagination links -->
-<div class="pagination">
+<ul class="pagination">
   {% if paginator.previous_page %}
   <li class="waves-effect"><a href="{{ paginator.previous_page_path }}"><i class="material-icons">chevron_left</i></a></li>
   {% else %}
@@ -26,5 +26,5 @@ title: Sam's Blog
   {% else %}
     <span class="next ">Next</span>
   {% endif %}
-</div>
+</ul>
 </div>
