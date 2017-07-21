@@ -1,28 +1,18 @@
 ---
 title: Acerca de mí
 ---
-<script src="https://polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,WeakMap"></script>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.5/hyperform.min.css">
-<link rel="stylesheet"
-	href="https://hyperform.js.org/statics/default_neue.min.css">
-<div class="container">
-<form>
-  <p>
-    <label>
-      A simple required field. Try submitting without filling it in.<br>
-      <input type="text" name="foo" required>
-    </label>
-  </p>
-  <p>
-    <button>go</button>
-  </p>
-</form>
-
-
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+<script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+  
+  <div class="well">
+  <form data-toggle="validator">
+    <div class="form-group">
+      <input type="text" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
 </div>
-<script
-	src="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.5/hyperform.min.js"
-	data-hf-autoload></script>
-
-<script>hyperform(window);</script>	
