@@ -3,5 +3,19 @@ layout: default
 title: Acerca de mí
 ---
 <div class="container">
-	
+<form>
+  <p>
+    <label>
+      A simple required field. Try submitting without filling it in.<br>
+      <input type="text" name="foo" required>
+    </label>
+  </p>
+  <p>
+    <button>go</button>
+  </p>
+</form>
+
+
 </div>
+<script src="path/to/hyperform/dist/hyperform.min.js"></script>
+<script>hyperform(window);</script>	
